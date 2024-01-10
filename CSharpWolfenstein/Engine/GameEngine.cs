@@ -98,7 +98,10 @@ public class GameEngine : AbstractGameEngine
     {
         if (controlState != ControlState.None)
         {
-            _game = _game with { ControlState = _game.ControlState ^ controlState };
+            if (((int)_game.ControlState & (int)controlState) == 0) // Only flip it if it's Off
+            {
+                _game = _game with { ControlState = _game.ControlState ^ controlState };
+            }
         }
     }
 
@@ -106,7 +109,10 @@ public class GameEngine : AbstractGameEngine
     {
         if (controlState != ControlState.None)
         {
-            _game = _game with { ControlState = _game.ControlState ^ controlState };
+            if (((int)_game.ControlState & (int)controlState) > 0) // Only flip it if it's On
+            {
+                _game = _game with { ControlState = _game.ControlState ^ controlState };
+            }
         }
     }
 }
