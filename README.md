@@ -1,8 +1,7 @@
 # README
 
-I thought it might be fun to convert my F# version of Wolfenstein 3D (code [here](https://github.com/JamesRandall/fsharp-wolfenstein), playable in the browser [here](https://www.jamesdrandall.com/wolf3d/)) to use modern C# and use Blazor to run it in the browser.
+I was looking for a project with Blazor and noticed (https://www.jamesdrandall.com/posts/csharp_blazor_wolfenstein_part_1/) and thought it would fun code to practice with. I am currently bringing the functionality from the F# version to the C# version. After that, I will make use of Blazor and SignalR to make the game online multiplayer :)
 
-I'm blogging about it as I go along:
+My goal is to showcase Blazor and my coding. I am using VS2022 and .NET8
 
-* https://www.jamesdrandall.com/posts/csharp_blazor_wolfenstein_part_1/
-* https://www.jamesdrandall.com/posts/csharp_blazor_wolfenstein_part_2/
+
